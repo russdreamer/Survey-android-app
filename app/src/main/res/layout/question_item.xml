@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" android:orientation="vertical">
+
+    <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider"
+            android:layout_weight="1"/>
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@+id/block_indicator"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" android:id="@+id/question_block" android:orientation="vertical">
+            <TextView
+                    android:layout_height="wrap_content" android:id="@+id/question_txt"
+                    android:textSize="18sp" android:textColor="@color/design_default_color_primary_dark"
+                    android:textAllCaps="false" android:layout_width="match_parent" android:textStyle="bold"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:id="@+id/answers">
+            </LinearLayout>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/comment_txt"
+                    android:textSize="14sp" android:textColor="@android:color/holo_orange_dark"
+                    android:textAllCaps="false"/>
+        </LinearLayout>
+        <TextView
+                android:layout_width="10dp"
+                android:layout_height="0dp" android:id="@+id/block_indicator"
+                android:background="@color/colorAccent" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:text="  "
+                app:layout_constraintBottom_toBottomOf="@+id/question_block"
+                app:layout_constraintTop_toTopOf="@+id/question_block"/>
+    </android.support.constraint.ConstraintLayout>
+    <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider"
+            android:layout_weight="1"/>
+
+</LinearLayout>

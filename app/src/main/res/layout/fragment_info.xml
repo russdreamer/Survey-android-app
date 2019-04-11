@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.Info">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/tool_bar"
+                android:theme="?attr/actionBarTheme"
+                android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar2"/>
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:orientation="vertical">
+                <TextView
+                        android:text="Как создавать опросы?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"
+                        android:textStyle="bold" android:textColor="@android:color/holo_blue_dark"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/how_create_survey_txt"
+                        android:textColor="@android:color/black" android:textSize="14sp"/>
+                <TextView
+                        android:text="Куда помещать файл опроса?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:textStyle="bold"
+                        android:textSize="24sp" android:textColor="@android:color/holo_blue_dark"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/where_surveys_store_txt"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:text="Где хранятся результаты опросов?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView9" android:textStyle="bold"
+                        android:textSize="24sp" android:textColor="@android:color/holo_blue_dark"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/where_results_store_txt"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:text="Ввод с клавиатуры"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/textView7" android:textStyle="bold"
+                        android:textSize="24sp" android:textColor="@android:color/holo_blue_dark"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/keyboard_input_txt"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:text="Версия приложения:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/text4" android:textSize="24sp"
+                        android:textStyle="bold" android:textColor="@android:color/holo_blue_dark"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/app_version_txt"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:text="Автор:"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/author" android:textSize="24sp"
+                        android:textStyle="bold" android:textColor="@android:color/holo_blue_dark"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="web"
+                        android:id="@+id/author_git_txt"
+                        android:textColor="@android:color/black"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/author_mail_txt"
+                        android:textColor="@android:color/holo_blue_dark" android:textStyle="italic"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/holo_blue_dark" android:textStyle="italic"
+                        android:textSize="24sp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

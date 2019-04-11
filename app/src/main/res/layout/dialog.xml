@@ -1,0 +1,49 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:id="@+id/relativeLayout3">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_message"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textSize="24sp"
+            android:textColor="#ff000000"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent" android:textAlignment="center"
+            android:textStyle="bold"/>
+
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/negative_dialog_btn"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/dialog_message"
+            android:background="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_message"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold" android:textSize="18sp"/>
+    <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:id="@+id/positive_dialog_btn"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_below="@+id/dialog_message"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff"
+            android:layout_marginTop="48dp"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_message"
+            app:layout_constraintEnd_toEndOf="parent" android:textSize="18sp" android:textStyle="bold"/>
+
+</android.support.constraint.ConstraintLayout>

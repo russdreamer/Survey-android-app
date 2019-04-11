@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".fragments.Result" android:id="@+id/frameLayout4">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="0dp"
+            android:background="@drawable/tool_bar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_height="50dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Всего результатов: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/result_txt"
+            app:layout_constraintTop_toTopOf="@+id/toolbar4" android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/count_result_txt"
+            app:layout_constraintBottom_toTopOf="@+id/result_txt"
+            app:layout_constraintTop_toTopOf="@+id/toolbar4" android:textSize="18sp"
+            android:textColor="@android:color/white" app:layout_constraintStart_toEndOf="@+id/textView8"
+            android:layout_marginStart="8dp"/>
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:ems="10"
+            android:id="@+id/result_txt"
+            android:hint="Еще не пройден ни один опрос..."
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/linearLayout">
+        <Button
+                android:text="КОПИРОВАТЬ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/copy_btn" android:layout_weight="1"
+                android:background="@drawable/neutral_button_effect" android:textColor="@android:color/white"
+                android:textStyle="bold" android:textSize="18sp"/>
+        <Button
+                android:text="СОХРАНИТЬ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/save_btn" android:layout_weight="1"
+                android:background="@drawable/positive_button_effect" android:textColor="@android:color/white"
+                android:textStyle="bold" android:textSize="18sp"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

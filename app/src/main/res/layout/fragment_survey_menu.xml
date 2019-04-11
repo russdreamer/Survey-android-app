@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".fragments.SurveyMenu" android:id="@+id/frameLayout3">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="0dp"
+            android:background="@drawable/tool_bar"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize" android:id="@+id/toolbar5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_height="50dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar5" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent">
+        <Button
+                android:text="НАЧАТЬ НОВЫЙ ОПРОС"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/new_survey_btn" android:layout_weight="1"
+                android:textSize="30sp" android:textStyle="bold" android:textColor="@android:color/white"
+                android:background="@drawable/green_btn_effect"/>
+        <Button
+                android:text="ПОСМОТРЕТЬ РЕЗУЛЬТАТ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/results_btn" android:layout_weight="1"
+                android:textSize="30sp" android:textStyle="bold"
+                android:background="@drawable/sky_btn_effect" android:textColor="@android:color/white"/>
+        <Button
+                android:text="РЕДАКТИРОВАТЬ ОПРОС"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/edit_survey_btn" android:layout_weight="1"
+                android:textSize="30sp" android:textStyle="bold"
+                android:background="@drawable/blue_btn_effect" android:textColor="@android:color/white"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
